@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "packages/esbuild-cjs"
+		},
+		{
+			"path": "packages/esbuild-esm"
+		},
+		{
+			"path": "packages/nextjs"
+		}
+	],
+	"settings": {}
+}
