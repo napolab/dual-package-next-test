@@ -4,10 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "packages/esbuild-cjs"
+			"path": "packages/generally-module"
 		},
 		{
-			"path": "packages/esbuild-esm"
+			"path": "packages/hack-module"
 		},
 		{
 			"path": "packages/nextjs"

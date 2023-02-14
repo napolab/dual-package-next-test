@@ -3,6 +3,7 @@
   "packageManager": "yarn@3.4.1",
   "scripts": {
     "dev": "next dev",
+    "generate": "next build && next export",
     "build": "next build",
     "lint": "npm-run-all -s 'lint:*'",
     "lint:eslint": "eslint --ext .ts,.tsx src",
@@ -23,11 +24,12 @@
     "eslint": "^8.34.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0"
   },
   "dependencies": {
-    "esbuild-cjs": "link:../esbuild-cjs",
-    "esbuild-esm": "link:../esbuild-esm",
+    "generally-module": "link:../generally-module",
+    "hack-module": "link:../hack-module",
     "next": "^13.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

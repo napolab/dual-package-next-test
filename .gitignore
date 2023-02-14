@@ -9,6 +9,8 @@
 # Documentation here: https://yarnpkg.com/features/zero-installs
 .yarn/cache
 node_modules
-lib
 #.pnp.*
 .next
+out
+.ultra.cache.json
+.tsbuildinfo

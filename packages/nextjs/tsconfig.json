@@ -10,7 +10,9 @@
     "moduleResolution": "node",
     "baseUrl": "./",
     "rootDir": "src",
-    "paths": {},
+    "paths": {
+      "~/*": ["./src/*"]
+    },
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

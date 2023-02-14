@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const HStack = styled.div`
+const HStack = styled.div`
   display: flex;
   gap: 1em;
-`
+`;
+
+export { HStack };

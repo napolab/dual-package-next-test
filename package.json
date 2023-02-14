@@ -2,7 +2,15 @@
   "name": "esm-cjs-build-result",
   "packageManager": "yarn@3.4.1",
   "private": true,
+  "scripts": {
+    "build": "ultra -r build",
+    "fmt": "ultra -r fmt",
+    "lint": "ultra -r lint"
+  },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "devDependencies": {
+    "ultra-runner": "^3.10.5"
+  }
 }

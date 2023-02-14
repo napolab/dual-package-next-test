@@ -1,7 +1,6 @@
 {
-  "name": "esbuild-cjs",
+  "name": "generally-module",
   "packageManager": "yarn@3.4.1",
-  "type": "commonjs",
   "main": "lib/index.cjs",
   "module": "lib/index.mjs",
   "types": "lib/index.d.ts",
@@ -12,6 +11,7 @@
   ],
   "scripts": {
     "build": "rollup -c rollup.config.mjs && tsc",
+    "postbuild": "publint",
     "lint": "npm-run-all -s 'lint:*'",
     "lint:eslint": "eslint --ext .ts src",
     "lint:prettier": "prettier --check .",
@@ -24,17 +24,22 @@
     "@naporin0624/eslint-config": "^0.7.1",
     "@types/eslint": "^8.21.0",
     "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
     "@types/styled-components": "^5.1.26",
     "esbuild": "^0.17.8",
     "eslint": "^8.34.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.8.4",
+    "publint": "^0.1.9",
     "rollup": "^3.15.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "react": ">=16.8"
   },
   "exports": {
     ".": {

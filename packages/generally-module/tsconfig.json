@@ -5,7 +5,7 @@
     "composite": true,
     "outDir": "lib",
     "target": "es2018",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM"],
     "module": "ESNext",
     "moduleResolution": "node",
     "baseUrl": "./",

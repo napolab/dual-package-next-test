@@ -6,11 +6,11 @@ export default defineConfig({
   output: [
     {
       format: "esm",
-      file: "lib/index.mjs",
+      file: "lib/index.esm.js",
     },
     {
       format: "cjs",
-      file: "lib/index.cjs",
+      file: "lib/index.cjs.js",
     },
   ],
   plugins: [esbuild()],
